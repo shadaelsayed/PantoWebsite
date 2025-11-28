@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="./style.css" rel="stylesheet" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+IT+Moderna:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <title>Panto</title>
+</head>
+<body>
+
+    <!--Navbar + Hero Section -->
+    <header class="px-4 md:px-12">
+
+    <nav class="text-white py-6 flex justify-between items-center">
+        <h2 class="font-semibold text-white text-2xl md:text-3xl">Panto</h2>
+
+        <div class="hidden md:block">
+            <ul class="flex justify-center items-center gap-6 md:gap-8">
+                <li class="cursor-pointer flex items-center gap-1">
+                    <a>Furniture</a>
+                    <i class="fa-solid fa-angle-down"></i>
+                </li>
+                <li><a>Shop</a></li>
+                <li><a>About us</a></li>
+                <li><a>Contact</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-bag-shopping text-xl md:text-2xl"></i>
+        </div>
+    </nav>
+
+    <div class="flex flex-col text-white justify-center items-center text-center mt-6 md:mt-10 px-4">
+
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight md:leading-[1.2] max-w-[900px]">
+            Make Your Interior More Minimalistic & Modern
+        </h1>
+
+        <p class="pt-3 text-[15px] md:text-[18px] text-gray-400 max-w-[600px]">
+            Turn your room with panto into a lot more minimalist and modern with ease and speed
+        </p>
+
+        <div class="w-full max-w-[350px] flex justify-center mt-6 md:mt-10">
+            <div class="flex items-center border border-white/40 rounded-full px-2 py-2 backdrop-blur-md bg-white/10 shadow-md w-full">
+
+                <input 
+                    type="text" 
+                    placeholder="Search furniture"
+                    class="flex-1 bg-transparent text-white placeholder-white/70 text-[16px] outline-none px-4"
+                />
+
+                <button class="w-8 h-8 md:w-10 md:h-10 rounded-full bg-orange-500 flex items-center justify-center shadow-lg hover:bg-orange-600 transition">
+                    <i class="fa-solid fa-magnifying-glass text-[10px] md:text-[14px]"></i>
+                </button>
+
+            </div>
+        </div>
+
+    </div>
+
+    </header>
+
+    <!-- About Us Section -->
+     <section class="px-6 md:px-20 py-20">
+
+        <div class="flex flex-col md:flex-row items-start gap-10">
+            
+            <div class="w-full md:w-1/3">
+            <h2 class="text-4xl md:text-4xl font-bold leading-tight">
+                Why <br class="hidden md:block"> Choosing Us
+            </h2>
+            </div>
+
+            <div class="w-full md:w-2/3 grid grid-cols-1 md:grid-cols-3 gap-10">
+
+            <div>
+                <h3 class="font-semibold text-lg mb-2">Luxury facilities</h3>
+                <p class="text-gray-500 text-sm leading-6 mb-4">
+                The advantage of hiring a workspace with us is that gives you comfortable service and all-around facilities.
+                </p>
+                <a href="#" class="text-orange-500 text-sm flex items-center gap-1 hover:underline">
+                More Info <span>→</span>
+                </a>
+            </div>
+
+            <div>
+                <h3 class="font-semibold text-lg mb-2">Affordable Price</h3>
+                <p class="text-gray-500 text-sm leading-6 mb-4">
+                You can get a workspace of the highest quality at an affordable price and still enjoy the facilities that are only here.
+                </p>
+                <a href="#" class="text-orange-500 text-sm flex items-center gap-1 hover:underline">
+                More Info <span>→</span>
+                </a>
+            </div>
+
+            <div>
+                <h3 class="font-semibold text-lg mb-2">Many Choices</h3>
+                <p class="text-gray-500 text-sm leading-6 mb-4">
+                We provide many unique work space choices so that you can choose the workspace to your liking.
+                </p>
+                <a href="#" class="text-orange-500 text-sm flex items-center gap-1 hover:underline">
+                More Info <span>→</span>
+                </a>
+            </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Best Selling Products Section -->
+      <section class="bg-gray-200 ">
+       <div class="container mx-auto px-4 py-12 max-w-6xl">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-custom-dark mb-10">Best Selling Products</h2>
+            
+            <div class="flex justify-center">
+                <div class="inline-flex bg-gray-300 rounded-full p-1">
+                    <button class="category-tab px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 bg-white shadow-sm">Chair</button>
+                    <button class="category-tab px-6 py-2 rounded-full text-sm font-medium transition-all duration-300">Beds</button>
+                    <button class="category-tab px-6 py-2 rounded-full text-sm font-medium transition-all duration-300">Sofa</button>
+                    <button class="category-tab px-6 py-2 rounded-full text-sm font-medium transition-all duration-300">Lamp</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="relative">
+            <div class="swiper px-2 md:px-10">
+                <div class="swiper-wrapper">
+                    <!-- Product 1 -->
+                    <div class="swiper-slide">
+                        <div class="bg-custom-gray rounded-2xl overflow-hidden transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
+                            <div class="h-64 flex items-center justify-center p-6 bg-gray-50">
+                                <img src="./images/Group 3742 (3).png">
+                            </div>
+                            <div class="p-6 bg-gray-100">
+                                <div class="text-gray-500 text-sm mb-1">Chair</div>
+                                <h3 class="text-lg font-semibold text-custom-dark mb-3">Sakarias Armchair</h3>
+                                <div class="flex mb-4">
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <div class="text-xl font-bold text-custom-dark">$392</div>
+                                    <button class="add-to-cart w-10 h-10 rounded-full bg-custom-dark text-white flex items-center justify-center transition-colors duration-300 bg-gray-700">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 2 -->
+                    <div class="swiper-slide">
+                        <div class="bg-custom-gray rounded-2xl overflow-hidden transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
+                            <div class="h-64 flex items-center justify-center p-6 bg-gray-50">
+                                <img src="./images/Group 3742 (2).png">
+                            </div>
+                            <div class="p-6 bg-gray-100">
+                                <div class="text-gray-500 text-sm mb-1">Chair</div>
+                                <h3 class="text-lg font-semibold text-custom-dark mb-3">Balsar Chair</h3>
+                                <div class="flex mb-4">
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <div class="text-xl font-bold text-custom-dark">$299</div>
+                                    <button class="add-to-cart w-10 h-10 rounded-full bg-custom-dark text-white flex items-center justify-center transition-colors duration-300 bg-gray-700">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 3 -->
+                    <div class="swiper-slide">
+                        <div class="bg-custom-gray rounded-2xl overflow-hidden transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
+                            <div class="h-64 flex items-center justify-center p-6 bg-gray-50">
+                                <img src="./images/Group 3742 (1).png">
+                            </div>
+                            <div class="p-6 bg-gray-100">
+                                <div class="text-gray-500 text-sm mb-1">Chair</div>
+                                <h3 class="text-lg font-semibold text-custom-dark mb-3">Anjay Chair</h3>
+                                <div class="flex mb-4">
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <div class="text-xl font-bold text-custom-dark">$519</div>
+                                    <button class="add-to-cart w-10 h-10 rounded-full bg-custom-dark text-white flex items-center justify-center transition-colors duration-300 bg-gray-700">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 4 -->
+                    <div class="swiper-slide">
+                        <div class="bg-custom-gray rounded-2xl overflow-hidden transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
+                            <div class="h-64 flex items-center justify-center p-6 bg-gray-50">
+                                <img src="./images/Group 3742.png">
+                            </div>
+                            <div class="p-6 bg-gray-100">
+                                <div class="text-gray-500 text-sm mb-1">Chair</div>
+                                <h3 class="text-lg font-semibold text-custom-dark mb-3">Nyantuy Chair</h3>
+                                <div class="flex mb-4">
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <div class="text-xl font-bold text-custom-dark">$921</div>
+                                    <button class="add-to-cart w-10 h-10 rounded-full bg-custom-dark text-white flex items-center justify-center transition-colors duration-300 bg-gray-700">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Product 1 -->
+                    <div class="swiper-slide">
+                        <div class="bg-custom-gray rounded-2xl overflow-hidden transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
+                            <div class="h-64 flex items-center justify-center p-6 bg-gray-50">
+                                <img src="./images/Group 3742 (3).png">
+                            </div>
+                            <div class="p-6 bg-gray-100">
+                                <div class="text-gray-500 text-sm mb-1">Chair</div>
+                                <h3 class="text-lg font-semibold text-custom-dark mb-3">Sakarias Armchair</h3>
+                                <div class="flex mb-4">
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <div class="text-xl font-bold text-custom-dark">$392</div>
+                                    <button class="add-to-cart w-10 h-10 rounded-full bg-custom-dark text-white flex items-center justify-center transition-colors duration-300 bg-gray-700">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 2 -->
+                    <div class="swiper-slide">
+                        <div class="bg-custom-gray rounded-2xl overflow-hidden transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
+                            <div class="h-64 flex items-center justify-center p-6 bg-gray-50">
+                                <img src="./images/Group 3742 (2).png">
+                            </div>
+                            <div class="p-6 bg-gray-100">
+                                <div class="text-gray-500 text-sm mb-1">Chair</div>
+                                <h3 class="text-lg font-semibold text-custom-dark mb-3">Balsar Chair</h3>
+                                <div class="flex mb-4">
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <div class="text-xl font-bold text-custom-dark">$299</div>
+                                    <button class="add-to-cart w-10 h-10 rounded-full bg-custom-dark text-white flex items-center justify-center transition-colors duration-300 bg-gray-700">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 3 -->
+                    <div class="swiper-slide">
+                        <div class="bg-custom-gray rounded-2xl overflow-hidden transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
+                            <div class="h-64 flex items-center justify-center p-6 bg-gray-50">
+                                <img src="./images/Group 3742 (1).png">
+                            </div>
+                            <div class="p-6 bg-gray-100">
+                                <div class="text-gray-500 text-sm mb-1">Chair</div>
+                                <h3 class="text-lg font-semibold text-custom-dark mb-3">Anjay Chair</h3>
+                                <div class="flex mb-4">
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <div class="text-xl font-bold text-custom-dark">$519</div>
+                                    <button class="add-to-cart w-10 h-10 rounded-full bg-custom-dark text-white flex items-center justify-center transition-colors duration-300 bg-gray-700">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 4 -->
+                    <div class="swiper-slide">
+                        <div class="bg-custom-gray rounded-2xl overflow-hidden transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
+                            <div class="h-64 flex items-center justify-center p-6 bg-gray-50">
+                                <img src="./images/Group 3742.png">
+                            </div>
+                            <div class="p-6 bg-gray-100">
+                                <div class="text-gray-500 text-sm mb-1">Chair</div>
+                                <h3 class="text-lg font-semibold text-custom-dark mb-3">Nyantuy Chair</h3>
+                                <div class="flex mb-4">
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                    <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <div class="text-xl font-bold text-custom-dark">$921</div>
+                                    <button class="add-to-cart w-10 h-10 rounded-full bg-custom-dark text-white flex items-center justify-center transition-colors duration-300 bg-gray-700">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-center items-center mt-8">
+                    <a href="#" class="text-orange-500 text-sm  flex items-center text-center gap-1 hover:underline">
+                    View More <span>→</span>
+                    </a>                
+                </div>
+
+                <div class="prev bg-gray-100 flex justify-center items-center ">
+                    <i class="fa-solid fa-arrow-left-long"></i>
+                </div>
+                <div class="next bg-gray-100 flex justify-center items-center ">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      </section>
+
+
+      <!--Experience Section  -->
+      <section class="container mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+            <div class="relative w-full flex justify-between">
+            <div class="absolute top-10 left-10 w-3/4 h-3/4 bg-gray-400 rounded-2xl  md:block"></div>
+            <img
+            src="./images/4a4b57d91dde88ae6788c27acd5fc55158eb2f11.jpg"
+            class="relative z-10 rounded-2xl shadow-xl w-full max-w-lg"
+            alt="Interior Design" />
+            </div>
+
+            <div>
+            <p class="text-orange-500 tracking-widest text-sm font-semibold mb-3">EXPERIENCES</p>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 leading-snug mb-5">
+            We Provide You The <br /> Best Experience
+            </h2>
+            <p class="text-gray-500 leading-relaxed mb-6 max-w-md">
+            You don't have to worry about the result because all of these interiors are
+            made by people who are professionals in their fields with an elegant and
+            luxurious style and with premium quality materials.
+            </p>
+
+
+            <a href="#" class="text-orange-500 font-semibold flex items-center gap-2 hover:underline">
+            More Info <span>→</span>
+            </a>
+            </div>
+     </section>
+
+     <!-- Materials Section -->
+      <section class="container ms-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center ">
+
+         <div>
+            <p class="text-orange-500 tracking-widest text-sm font-semibold mb-3">MATERIALS</p>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 leading-snug mb-5">
+            Very serious materials for  <br> making furniture
+            </h2>
+            <p class="text-gray-500 leading-relaxed mb-6 max-w-md">
+            Because panto was very serious about designing furniture for our environment, using a very expensive and famous capital but at a relatively low price
+            </p>
+
+
+            <a href="#" class="text-orange-500 font-semibold flex items-center gap-2 hover:underline">
+            More Info <span>→</span>
+            </a>
+         </div>
+
+         <div class="flex justify-center items-center">
+            <div class="flex flex-col gap-0">
+                    <img src="./images/Group 48095417.png">
+                    <img src="./images/Group 48095419.png">
+            </div>
+            <div>
+                <img src="./images/Rectangle 1446.png">
+            </div>
+        </div>
+        
+    </section>
+    
+    <!-- Testimonials -->
+    <section class="bg-white ">
+    <div class="container mx-auto px-4 py-12 max-w-6xl">
+     <div class="text-center mb-12">
+         <p class="text-orange-500 pb-4">Testimonials</p>
+         <h2 class="text-3xl md:text-4xl font-bold text-custom-dark mb-10">Our Client Reviews</h2>
+    
+     </div>
+     
+     <div class="relative ">
+         <div class="swiper2 px-2 md:px-10">
+             <div class="swiper-wrapper">
+                 <!-- Product 1 -->
+                 <div class="swiper-slide mx-0 md:mx-2 lg:mx-5">
+                     <div class="test1 transition-transform rounded-2xl duration-300 shadow-lg hover:-translate-y-1">
+                         <div class="divtest1 h-[50%] bg-white rounded-2xl mx-3 md:mx-5 flex flex-col justify-center items-center">
+                             <div class="imgtest1 w-[50px] h-[50px] rounded-full overflow-hidden flex justify-center items-center">
+                                 <img src="./images/c4cbc9c3693f362df2bba9586ad3678aa283874d.png">
+                             </div>
+                             <span class="text-black font-bold pt-3">Bang Upin</span>
+                             <p class="text-gray-500 text-[14px]">Pedagang Asongan</p>
+                             <p class="text-center text-gray-600 text-[16px] py-5">“Terimakasih banyak, kini ruanganku menjadi lebih mewah dan terlihat mahal“</p>
+                             <div class="flex">
+                                 <img src="./images/Star.png">
+                                 <img src="./images/Star.png">
+                                 <img src="./images/Star.png">
+                                 <img src="./images/Star.png">
+                                 <img src="./images/Star.png">
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 
+                 <!-- Product 2 -->
+                 <div class="swiper-slide mx-0 md:mx-2 lg:mx-5">
+                     <div class="test2 transition-transform rounded-2xl duration-300 shadow-lg hover:-translate-y-1">
+                         <div class="divtest2 h-[50%] bg-white rounded-2xl mx-3 md:mx-5 flex flex-col justify-center items-center">
+                             <div class="imgtest2 w-[50px] h-[50px] rounded-full overflow-hidden flex justify-center items-center">
+                                 <img src="./images/9318bb8ee0d2f807ef12cd888e7a706d3c352d93.png">
+                             </div>
+                             <span class="text-black font-bold pt-3">Ibuk Sukijan</span>
+                             <p class="text-gray-500 text-[14px]">Ibu Rumah Tangga</p>
+                             <p class="text-center text-gray-600 text-[16px] py-5">“Makasih Panto, aku sekarang berasa tinggal di apartment karena barang-barang yang terlihat mewah“</p>
+                             <div class="flex">
+                                 <img src="./images/Star.png">
+                                 <img src="./images/Star.png">
+                                 <img src="./images/Star.png">
+                                 <img src="./images/Star.png">
+                                 <img src="./images/Star.png">
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 
+                 <!-- Product 3 -->
+                 <div class="swiper-slide mx-0 md:mx-2 lg:mx-5">
+                     <div class="test3 transition-transform rounded-2xl  duration-300 shadow-lg hover:-translate-y-1">
+                         <div class="divtest3 h-[50%] bg-white rounded-2xl mx-3 md:mx-5  flex flex-col justify-center items-center">
+                             <div class="imgtest3 w-[50px] h-[50px] rounded-full overflow-hidden flex justify-center items-center">
+                                 <img src="./images/d43a89115d7fae4331cf22d47d38567392e94635.png">
+                             </div>
+                             <span class="text-black font-bold pt-3">Mpok Ina</span>
+                             <p class="text-gray-500 text-[14px]">Karyawan Swasta</p>
+                             <p class="text-center text-gray-600 text-[16px] py-5">“Sangat terjangkau untuk kantong saya yang tidak terlalu banyak“</p>
+                             <div class="flex">
+                                 <img src="./images/Star.png">
+                                 <img src="./images/Star.png">
+                                 <img src="./images/Star.png">
+                                 <img src="./images/Star.png">
+                                 <img src="./images/Star.png">
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+    
+             </div>
+    
+    
+             <div class="prev bg-gray-100 flex justify-center items-center ">
+                 <i class="fa-solid fa-arrow-left-long"></i>
+             </div>
+             <div class="next bg-gray-100 flex justify-center items-center ">
+                 <i class="fa-solid fa-arrow-right-long"></i>
+             </div>
+         </div>
+     </div>
+    </div>
+    
+    </section>
+    
+    
+      <!-- footer -->
+
+        <footer>
+            <div class="bg-gray-100 text-gray-500 text-start 
+                        flex flex-col md:flex-row md:justify-evenly 
+                        md:items-start gap-10 md:gap-0 py-9 px-6 md:px-16">
+
+                <div>
+                    <h3 class="font-bold text-2xl text-blue-950 pb-3.5">Panto</h3>
+                    <p class="w-full md:w-[300px]">
+                        The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities.
+                    </p>
+                </div>
+
+                <div>
+                    <span class="text-orange-500">Services</span>
+                    <p class="pt-5 pb-2">Email Marketing</p>
+                    <p class="pb-2">Campaigns</p>
+                    <p>Branding</p>
+                </div>
+
+                <div>
+                    <span class="text-orange-500">Furniture</span>
+                    <p class="pt-5 pb-2">Beds</p>
+                    <p class="pb-2">Chair</p>
+                    <p>All</p>
+                </div>
+
+                <div>
+                    <span class="text-orange-500">Follow Us</span>
+                    <p class="pt-5 pb-2">
+                        <i class="fa-brands fa-facebook text-blue-950"></i>
+                        Facebook
+                    </p>
+                    <p class="pb-2">
+                        <i class="fa-brands fa-twitter text-blue-950"></i>
+                        Twitter
+                    </p>
+                    <p>
+                        <i class="fa-brands fa-instagram text-blue-950"></i>
+                        Instagram
+                    </p>
+                </div>
+
+            </div>
+            <div class="bg-gray-100 flex justify-around items-center py-4">
+                <p class="text-gray-500">Copyright © 2021</p>
+                <div class="flex text-black">
+                    <p>Terms & Conditions</p>
+                    <p>Privacy Policy</p>
+                </div>
+            </div>
+        </footer>
+        
+
+
+     
+      
+<script src="./script.js"></script>
+</body>
+</html>
